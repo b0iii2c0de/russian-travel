@@ -1,0 +1,17 @@
+@import url(../vendor/normalize.css);
+
+.page {
+	max-width: 1440px;
+	margin: auto;
+	font-family: 'Inter';
+	/* просто копируй эту пачку в каждый проект ↓ */
+	/* cглаживание шрифтов для разных браузеров ↓ */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* увеличение шрифтов для разных браузеров ↓ */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	/* кёрнинг и лигатуры для шрифтов разных браузеров ↓ */
+	text-rendering: optimizeLegibility;
+  }
