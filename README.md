@@ -27,4 +27,4 @@
 * Скамить мамонтов
 
 ### P.S.
-сайт доступен по [ссылке](https://c0deb0iii.github.io/russian-travel/index.html)
+сайт доступен по [ссылке](https://c0deb0iii.github.io/russian-travel/)
