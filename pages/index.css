@@ -1,9 +1,10 @@
 @import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
 
 .page {
 	max-width: 1280px;
 	margin: auto;
-	font-family: 'Inter';
+	font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
 	/* просто копируй эту пачку в каждый проект ↓ */
 	/* cглаживание шрифтов для разных браузеров ↓ */
 	-webkit-font-smoothing: antialiased;
