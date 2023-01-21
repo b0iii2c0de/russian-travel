@@ -2,7 +2,7 @@
 @import url(../vendor/fonts/fonts.css);
 
 .page {
-	max-width: 1280px;
+  max-width: 1280px;
 	margin: 0 auto;
 	background: #2A2C2F;
 	font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
@@ -16,65 +16,184 @@
 	-moz-text-size-adjust: 100%;
 	/* кёрнинг и лигатуры для шрифтов разных браузеров ↓ */
 	text-rendering: optimizeLegibility;
-  }
+}
 
-  /* Кастомизация вертикального скролла */
+/* Кастомизация вертикального скролла */
 
 ::-webkit-scrollbar {
 	width: 4px;
 	background-color: rgb(53, 53, 53);
 	border-radius: 10px;
 	border: 2px solid white;
-  }
+}
   
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	border-radius: 4px;
-	background-color: #2f80ed;
-  }
+	background-color: #454b54;
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
 	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 	background-color: rgb(255, 255, 255);
-  }
+}
 
-  .header {
+/* HEADER */
+
+.header {
 	max-width: 1184px;
-	max-height: 52px;
+	/* max-height: 52px; */
 	margin: 0 auto;
 	padding: 28px 0 56px;
 	display: flex;
 	justify-content: space-between;
-  }
+  /* align-items: flex-end; */
+}
 
-  .header__logo {
+/* MEDIA */
+
+/* 
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	.header {
+	  max-width: 928px;
+	}
+}
+  
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.header {
+	  max-width: 720px;
+	  padding: 28px 24px 0 24px;
+	}
+}
+  
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.header {
+	  max-width: 288px;
+	  padding: 16px 16px 0 16px;
+	}
+} */
+
+.header__logo {
 	max-width: 176px;
 	max-height: 52px;
-  }
+}
 
-  .header__lang-links {
-	align-self: center;
-  }
+.header__lang-links {
+  align-self: center;
+}
 
-  .header__lang-link {
+.header__lang-link {
 	font-family: 'Inter';
 	font-weight: 400;
 	font-style: normal;
-	/* em & rem ↓ */
+  /* em & rem ↓ */
 	font-size: 24px;
 	line-height: 28px;
 	color: white;
 	margin-right: 18px;
 	transition: opacity 0.3s ease-out 0s;
-  }
+}
 
-  .header__lang-link:hover {
+.header__lang-link:hover {
 	opacity: 0.4;
 	/* color: black; */
-  }
+}
 
-  .header__lang-link:nth-of-type(2n) {
+.header__lang-link:nth-of-type(2n) {
 	margin: 0;
 	text-decoration: none;
-  }
+	/* для EN страницы сделать модификатор */
+}
+
+/* LEAD */
+
+.content {
+	
+}
+
+.lead {
+	margin: 0 auto;
+	max-width: 984px;
+}
+
+.lead__title {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 96px;
+	line-height: 100px;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	max-width: 720px;
+	max-height: 200px;
+}
+
+.lead__subtitle {
+  font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	padding: 32px 0 64px;
+	max-width: 640px;
+	max-height: 72px;
+}
+
+.lead__image-wrapper {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.lead__image {
+	max-width: 100%;
+	max-height: 615px;
+	background-size: cover;
+	/* margin: 0 auto; */
+}
+
+.lead__caption {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 8px;
+}
+
+/* INTRO */
+
+.intro {
+
+}
+
+.intro__title {
+
+}
+
+.intro__text {
+
+}
+
+.intro__list {
+
+}
+
+.intro__list-item {
+
+}
+
+.intro__span-accent {
+
+}
+
+/* PHOTO-GRID */
+
