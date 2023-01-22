@@ -2,7 +2,7 @@
 @import url(../vendor/fonts/fonts.css);
 
 .page {
-  max-width: 1280px;
+  max-width: 1280px;  
 	margin: 0 auto;
 	background: #2A2C2F;
 	font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
@@ -42,56 +42,77 @@
 /* HEADER */
 
 .header {
-	max-width: 1184px;
-	/* max-height: 52px; */
-	margin: 0 auto;
-	padding: 28px 0 56px;
-	display: flex;
-	justify-content: space-between;
-  /* align-items: flex-end; */
+  margin: 0 auto;
+  max-width: 1184px;
+  padding: 28px 48px 56px 48px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
 }
 
-/* MEDIA */
+@media (max-width: 1279px) {
+  .header {
+    max-width: 928px;
+    padding-bottom: 48px;
+  }
+}
 
-/* 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-	.header {
-	  max-width: 928px;
-	}
+@media (max-width: 1023px) {
+  .header {
+    max-width: 720px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
-  
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-	.header {
-	  max-width: 720px;
-	  padding: 28px 24px 0 24px;
-	}
+
+@media (max-width: 767px) {
+  .header {
+    max-width: 288px;
+    padding: 16px 16px 48px 16px;
+  }
 }
-  
-@media screen and (min-width: 320px) and (max-width: 767px) {
-	.header {
-	  max-width: 288px;
-	  padding: 16px 16px 0 16px;
-	}
-} */
 
 .header__logo {
-	max-width: 176px;
-	max-height: 52px;
+  width: 176px;
+  height: 52px;
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
 }
 
 .header__lang-links {
-  align-self: center;
+  display: flex;
+  gap: 18px;
 }
 
 .header__lang-link {
-	font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-  /* попробовать позже em & rem ↓ */
-	font-size: 24px;
-	line-height: 28px;
-	color: white;
-	margin-right: 18px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #FFFFFF;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+.header__lang-link:nth-of-type(2n) {
+	text-decoration: none;
+  /* вынести состояние в отдельный модификатор после появлении En версии */
+}
+
+@media (max-width: 767px) {
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 14px;
+    margin-bottom: 8px;
+  }
 }
 
 .link-hover {
@@ -103,48 +124,100 @@
 	/* color: yellow; */
 }
 
-.header__lang-link:nth-of-type(2n) {
-	margin: 0;
-	text-decoration: none;
-  /* вынести состояние в отдельный модификатор после появлении En версии */
-}
-
 /* LEAD */
 
-.content {
-
+.lead {
+  max-width: 984px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
 }
 
-.lead {
-	margin: 0 auto;
-	max-width: 984px;
+@media (max-width: 1279px) {
+  .lead {
+    max-width: 928px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .lead {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lead {
+    max-width: 320px;
+  }
 }
 
 .lead__title {
-	font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
-	font-style: normal;
-	font-weight: 900;
-	font-size: 96px;
-	line-height: 100px;
-	text-align: center;
-	color: white;
-	margin: 0 auto;
-	max-width: 720px;
-	max-height: 200px;
+  margin: 0 132px;
+  max-width: 720px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 104%;
+  text-align: center;
+}
+
+@media (max-width: 1279px) {
+  .lead__title {
+    margin: 0 104px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .lead__title {
+    margin: 0 24px;
+  }
+}
+
+@media (max-width: 767px) {
+.lead__title {
+    margin: 0 16px;
+    max-width: 288px;
+    font-size: 40px;
+    line-height: 110%;
+  }
 }
 
 .lead__subtitle {
+  max-width: 640px;
+  margin: 0;
+  padding: 32px 172px 64px 172px;
   font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 30px;
-	line-height: 36px;
-	text-align: center;
-	color: white;
-	margin: 0 auto;
-	padding: 32px 0 64px;
-	max-width: 640px;
-	max-height: 72px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+}
+
+@media (max-width: 1279px) {
+  .lead__subtitle {
+    padding: 32px 144px 56px 144px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .lead__subtitle {
+    padding: 32px 64px 56px 64px;
+  }
+}
+
+@media (max-width: 767px) {
+.lead__subtitle {
+    max-width: 288px;
+    padding: 16px 16px 40px 16px;
+    font-size: 16px;
+    line-height: 125%;
+  }
 }
 
 .lead__image-wrapper {
@@ -157,7 +230,27 @@
 	max-width: 100%;
 	max-height: 615px;
 	background-size: cover;
-	/* margin: 0 auto; */
+}
+
+@media (max-width: 1279px) {
+  .lead__image {
+    width: 928px;
+    height: 580px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .lead__image {
+    width: 768px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lead__image {
+    width: 320px;
+    height: 200px;
+  }
 }
 
 .lead__caption {
@@ -172,16 +265,28 @@
   padding-top: 8px;
 }
 
+@media (max-width: 1023px) {
+  .lead__caption {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lead__caption {
+    padding-left: 16px;
+  }
+}
+
 /* INTRO */
 
 .intro {
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 92px 442px 92px 148px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 0 auto;
-  max-width: 690px;
-  color: #FFFFFF;
-  padding: 92px 442px 92px 148px;
+  color: white;
 }
 
 @media (max-width: 1279px) {
@@ -192,59 +297,59 @@
 
 @media (max-width: 1023px) {
   .intro {
-    padding: 110px 24px 88px 24px;
-    margin: 0 auto;
     max-width: 720px;
+    margin: 0 auto;
+    padding: 110px 24px 88px 24px;
   }
 }
 
 @media (max-width: 767px) {
   .intro {
     width: 288px;
-    padding: 64px 16px;
     margin: 0 auto;
+    padding: 64px 16px;
   }
 }
 
 .intro__title {
+  margin: 0;
   font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 54px;
   line-height: 107%;
-  margin: 0;
 }
 
 @media (max-width: 767px) {
-.intro__title {
+  .intro__title {
+    max-width: 288px;
     font-size: 32px;
     line-height: 109%;
-    max-width: 288px;
   }
 }
 
 .intro__text {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 33px;
   font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 163%;
-  padding-top: 40px;
-  padding-bottom: 33px;
-  margin: 0;
 }
 
 @media (max-width: 767px) {
 .intro__text {
-    padding-bottom: 34px;
     max-width: 288px;
+    padding-bottom: 34px;
   }
 }
 
 .intro__list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .intro__list-item {
@@ -740,3 +845,4 @@
 }
 
 /* La Fin */
+
