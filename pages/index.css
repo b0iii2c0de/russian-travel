@@ -106,7 +106,7 @@
 .header__lang-link:nth-of-type(2n) {
 	margin: 0;
 	text-decoration: none;
-	/* для EN страницы сделать модификатор */
+  /* вынести состояние в отдельный модификатор после появлении En версии */
 }
 
 /* LEAD */
@@ -175,27 +175,92 @@
 /* INTRO */
 
 .intro {
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 690px;
+  color: #FFFFFF;
+  padding: 92px 442px 92px 148px;
+}
+
+@media (max-width: 1279px) {
+  .intro {
+    padding: 92px 286px 92px 48px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .intro {
+    padding: 110px 24px 88px 24px;
+    margin: 0 auto;
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    width: 288px;
+    padding: 64px 16px;
+    margin: 0 auto;
+  }
 }
 
 .intro__title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 107%;
+  margin: 0;
+}
 
+@media (max-width: 767px) {
+.intro__title {
+    font-size: 32px;
+    line-height: 109%;
+    max-width: 288px;
+  }
 }
 
 .intro__text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  padding-top: 40px;
+  padding-bottom: 33px;
+  margin: 0;
+}
 
+@media (max-width: 767px) {
+.intro__text {
+    padding-bottom: 34px;
+    max-width: 288px;
+  }
 }
 
 .intro__list {
-
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .intro__list-item {
-
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .intro__span-accent {
-
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
 }
 
 /* PHOTO-GRID */
