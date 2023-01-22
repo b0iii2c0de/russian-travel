@@ -1,7 +1,7 @@
 .page {
-  max-width: 1280px;  
-	margin: 0 auto;
-	background: #2A2C2F;
+  max-width: 1280px;
+  margin: 0 auto;
+  background: #2A2C2F;
 	font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
 	/* просто копируй эту пачку в каждый проект ↓ */
 	/* cглаживание шрифтов для разных браузеров ↓ */
