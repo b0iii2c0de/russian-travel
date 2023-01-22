@@ -544,3 +544,120 @@
 }
 
 /* COVER */
+
+.cover {
+  margin: 0 auto;
+  max-width: 1184px;
+  min-height: 740px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(42, 44, 47, 0.3),rgba(42, 44, 47, 0.3)),url(../images/cover-trains.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cover:hover {
+  background-image: linear-gradient(rgba(42, 44, 47, 0.8),rgba(42, 44, 47, 0.8)),url(../images/cover-trains.jpg);
+}
+
+@media (max-width: 1279px) {
+  .cover {
+    max-width: 1024px;
+    min-height: 640px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cover {
+    max-width: 768px;
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cover {
+    max-width: 320px;
+    min-height: 200px;
+    background-size: cover;
+  }
+}
+
+.cover__link {
+  min-width: 1184px;
+  min-height: 740px;
+  margin: 0 auto;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  color: #fff;
+}
+
+@media (max-width: 1279px) {
+  .cover__link {
+    min-width: 1024px;
+    min-height: 640px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cover__link {
+    min-width: 768px;
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cover__link {
+    min-width: 320px;
+    min-height: 200px;
+    gap: 16px;
+  }
+}
+
+.cover__title {
+  margin: 0 auto;
+  max-width: 560px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 106%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+.cover__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+.cover__subtitle {
+  margin: 0 auto;
+  max-width: 360px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .cover__subtitle {
+    max-width: 288px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+/* FOOTER */
+
