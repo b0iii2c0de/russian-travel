@@ -1,0 +1,8 @@
+.link-hover {
+	transition: opacity 0.3s ease-out 0s;
+}
+
+.link-hover:hover {
+	opacity: 0.4;
+	/* color: yellow; */
+}

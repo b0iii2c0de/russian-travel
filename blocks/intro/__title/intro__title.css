@@ -1,0 +1,16 @@
+.intro__title {
+  margin: 0;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 107%;
+}
+
+@media (max-width: 767px) {
+  .intro__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 109%;
+  }
+}

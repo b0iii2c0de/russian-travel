@@ -1,0 +1,36 @@
+.cover__link {
+  min-width: 1184px;
+  min-height: 740px;
+  margin: 0 auto;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 32px;
+  color: #fff;
+}
+
+@media (max-width: 1279px) {
+  .cover__link {
+    min-width: 1024px;
+    min-height: 640px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cover__link {
+    min-width: 768px;
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cover__link {
+    min-width: 320px;
+    min-height: 200px;
+    gap: 16px;
+  }
+}
