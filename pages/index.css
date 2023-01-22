@@ -661,3 +661,82 @@
 
 /* FOOTER */
 
+.footer {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 92px 48px 24px 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1279px) {
+  .footer {
+    max-width: 928px;
+    padding: 88px 24px 24px 24px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    max-width: 186px;
+    padding: 64px 118px 24px 16px;
+    flex-direction: column;
+  }
+}
+
+.footer__links {
+  margin: 0;
+  display: flex;
+  gap: 18px;
+}
+
+@media (max-width: 767px) {
+.footer__links {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.footer__link {
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+.footer__link {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+.footer__copyright {
+    padding-top: 48px;
+    line-height: 1.5;
+    text-align: left;
+  }
+}
+
+/* La Fin */
