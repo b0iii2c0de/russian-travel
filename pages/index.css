@@ -92,12 +92,15 @@
 	line-height: 28px;
 	color: white;
 	margin-right: 18px;
+}
+
+.link-hover {
 	transition: opacity 0.3s ease-out 0s;
 }
 
-.header__lang-link:hover {
+.link-hover:hover {
 	opacity: 0.4;
-	/* color: black; */
+	/* color: yellow; */
 }
 
 .header__lang-link:nth-of-type(2n) {
@@ -172,7 +175,7 @@
 /* INTRO */
 
 .intro {
-
+  
 }
 
 .intro__title {
