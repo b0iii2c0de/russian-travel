@@ -32,9 +32,7 @@
 
 @media (max-width: 767px) {
   .place {
-    display: grid;
     grid-template-columns: 320px;
-    grid-template-rows: auto;
     grid-template-areas: 
     "title" 
     "website"

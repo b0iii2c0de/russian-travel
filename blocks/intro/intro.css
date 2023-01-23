@@ -17,15 +17,13 @@
 @media (max-width: 1023px) {
   .intro {
     max-width: 720px;
-    margin: 0 auto;
-    padding: 110px 24px 88px 24px;
+    padding: 88px 24px;
   }
 }
 
 @media (max-width: 767px) {
   .intro {
     width: 288px;
-    margin: 0 auto;
     padding: 64px 16px;
   }
 }
